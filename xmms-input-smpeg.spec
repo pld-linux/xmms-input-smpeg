@@ -1,7 +1,7 @@
 Summary:	MPEG video playing plugin for xmms
 Summary(pl):	Wtyczka odtwarzaj±ca filmy MPEG dla xmms
 Name:		xmms-smpeg
-Version:	0.3.1
+Version:	0.3.2
 Release:	1
 Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
@@ -14,6 +14,7 @@ BuildRequires:	libstdc++-devel
 BuildRequires:	glib-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	SDL-devel
+BuildRequires:	smpeg-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
