@@ -39,8 +39,8 @@ rm -f missing
 libtoolize --copy --force
 aclocal
 autoheader
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 CPPFLAGS="-L%{_libdir}"; export CPPFLAGS
 %configure
 
