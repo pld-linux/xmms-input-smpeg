@@ -2,14 +2,14 @@ Summary:	MPEG video playing plugin for xmms
 Summary(pl):	Wtyczka odtwarzaj±ca filmy MPEG dla xmms
 Name:		xmms-input-smpeg
 Version:	0.3.4
-Release:	1
+Release:	2
+License:	GPL
 Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
-License:	GPL
 Source0:	http://www.xmms.org/files/plugins/smpeg-xmms/smpeg-xmms-%{version}.tar.gz
 Requires:	xmms
-BuildRequires:	SDL-devel
+BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	glib-devel
@@ -28,7 +28,7 @@ Obsoletes:	smpeg-xmms
 This plugin allows xmms to play MPEG movies.
 
 %description -l pl
-Ta wtyczka pozwala xmms'owi odtwarzaæ filmy w formacie MPEG
+Ta wtyczka pozwala xmms'owi odtwarzaæ filmy w formacie MPEG.
 
 %prep
 %setup -q -n smpeg-xmms-%{version}
