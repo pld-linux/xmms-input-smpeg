@@ -30,10 +30,10 @@ Ta wtyczka pozwala xmms'owi odtwarzaæ filmy w formacie MPEG
 
 %build
 autoheader;autoconf;automake; 
-
+export CPPFLAGS="-L%{_libdir}"
 %configure 
 
-%{__make}
+%{__make} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
