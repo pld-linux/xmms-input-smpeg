@@ -1,8 +1,8 @@
 Summary:	MPEG video playing plugin for xmms
 Summary(pl):	Wtyczka odtwarzaj±ca filmy MPEG dla xmms
 Name:		xmms-input-smpeg
-Version:	0.3.3
-Release:	2
+Version:	0.3.4
+Release:	1
 Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
