@@ -36,7 +36,7 @@ Ta wtyczka pozwala xmms'owi odtwarzaæ filmy w formacie MPEG.
 
 %build
 rm -f missing
-libtoolize --copy --force
+%{__libtoolize}
 aclocal
 autoheader
 %{__autoconf}
