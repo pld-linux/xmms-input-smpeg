@@ -40,7 +40,7 @@ libtoolize --copy --force
 aclocal
 autoheader
 autoconf
-automake -a -c
+automake -a -c -f
 CPPFLAGS="-L%{_libdir}"; export CPPFLAGS
 %configure
 
