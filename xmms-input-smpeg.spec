@@ -15,7 +15,7 @@ BuildRequires:	glib-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
-BuildRequires:	smpeg-devel
+BuildRequires:	smpeg-devel >= 0.4.4
 BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
 Requires:	xmms
