@@ -8,6 +8,7 @@ Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://www.xmms.org/files/plugins/smpeg-xmms/smpeg-xmms-%{version}.tar.gz
+Patch0:		%{name}-am15.patch
 Requires:	xmms
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	autoconf
@@ -15,6 +16,7 @@ BuildRequires:	automake
 BuildRequires:	glib-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
 BuildRequires:	smpeg-devel
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -32,10 +34,13 @@ Ta wtyczka pozwala xmms'owi odtwarzaæ filmy w formacie MPEG.
 
 %prep
 %setup -q -n smpeg-xmms-%{version}
+%patch0 -p1
 
 %build
-autoheader
+rm -f missing
+libtoolize --copy --force
 aclocal
+autoheader
 autoconf
 automake -a -c
 CPPFLAGS="-L%{_libdir}"; export CPPFLAGS
